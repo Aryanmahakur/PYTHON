@@ -1,3 +1,4 @@
+'''
 #ch1
 
 #ch2
@@ -40,3 +41,117 @@ l.reverse()
 print(l)
 l.clear()
 print(l)
+
+#tuple
+t = (1, 2, 3, 4, 5)
+print(t)
+print(t[0])
+#t[0] = 6 #TypeError: 'tuple' object does not support item assignment
+print(t.count(1))
+print(t.index(1))
+
+#dictionary
+d = {"key1": "value1", "key2": "value2", "key3": "value3"}
+print(d)
+print(d["key1"])
+d["key1"] = "value4"
+print(d)
+print(d.items())
+print(d.keys())
+print(d.values())
+print(d.update({"key5": "value5"}) )
+print(d)
+print(d.pop("key5"))
+print(d)
+print(d.get("key1"))
+print(d)
+
+#sets
+s = {1, 2, 3, 4, 5}
+s.add(6)
+print(s)
+s.update([7, 8, 9])
+print(s)
+
+print(len(s))
+s.remove(9)
+print(s)
+s.discard(8)
+print(s)
+
+s1 = {1, 2, 3, 4, 5}
+s2 = {4, 5, 6, 7, 8}
+print(s1.union(s2))
+print("union")
+print(s1.intersection(s2))
+print("intersection")
+print(s1.difference(s2))
+
+#ch5
+a= 5
+
+
+if  a<10 :
+    print("a is less than 10")
+else:
+    print("a is greater than 10")
+
+ip = int(input("enter the number"))
+
+if ip%2==0:
+    print("even")
+else:
+    print("odd")
+
+age = int(input("enter the age"))
+if age<18:
+    print("not eligible")
+
+elif age>18:
+    print("eligible")
+else:
+    print("error")
+
+    
+    #ch6
+i=0
+while i<10:
+    print(i)
+    i+=1
+
+l=[1,2,3,4,5]
+for i in l:
+    print(i)
+'''
+    #questions
+ #1
+num = [1, 2, 3, 4, 5, 6, 7, 8]
+
+index = 0
+while index < len(num):
+    if num[index] % 2 != 0:
+        print( "odd" , num[index])
+    index += 1
+    #2
+num = int(input("enter number"))
+if(num%2==0):
+    print("number is even" , num)
+else:
+        print("odd")
+        
+    
+    
+#3
+num = [10, 45, 78, 23]
+max_value = num[0]  # Assume the first element is the largest
+index = 1  # Start from the second element
+
+while index < len(num):
+    if num[index] > max_value:
+        max_value = num[index]  # Update max_value if a larger number is found
+    index += 1
+
+print("The biggest number is:", max_value)
+
+
+       
