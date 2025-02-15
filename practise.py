@@ -123,8 +123,59 @@ l=[1,2,3,4,5]
 for i in l:
     print(i)
 '''
+#ch8
+def func1():
+    print("hello")
+
+func1()
+
+
+def func2(name):
+    gr = "Good Morning " + name
+    return gr
+
+a = func2("Aryan")
+print(a)
+def greet(name, ending="Good Morning"):
+    print(f"{ending} {name}")
+
+a = greet("Aryan" , "Good Night")
+print(a)
+
+#ch10
+
+class City:
+    def getinfo(self):
+        print("The city of", self.nameofcity, "has a population of", self.population)
+
+delhi = City()
+delhi.nameofcity = "Delhi"
+delhi.population = "1.5 m"
+
+City.getinfo(delhi)  # Calling the method
+
+#ch10
+class Employees:
+    def __init__(self, name, age, salary):
+        self.name = name
+        self.age = age
+        self.salary = salary
+
+@staticmethod
+def greet(name):
+    print("Hello Aryan")
+# Creating an object of Employees class
+aryan = Employees("Aryan", 23, 10000)
+a=greet("Aryan")
+print(a)
+# Printing object attributes
+print(aryan.name)
+print(aryan.age)    
+print(aryan.salary)
+
     #questions
  #1
+'''
 num = [1, 2, 3, 4, 5, 6, 7, 8]
 
 index = 0
@@ -152,6 +203,8 @@ while index < len(num):
     index += 1
 
 print("The biggest number is:", max_value)
+'''
+
 
 
        
